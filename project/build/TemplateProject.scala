@@ -7,7 +7,7 @@ import sbt._
 class TemplateProject(info: ProjectInfo) extends DefaultProject(info) with posterous.Publish {
 
   // Testing...
-  val scalatest = "org.scalatest" % "scalatest" % "1.1" % "test"
+  val scalatest = "org.scalatest" % "scalatest" % "1.2" % "test"
 
   // postereous.Publish configuration...
   override def extension = ".md"
