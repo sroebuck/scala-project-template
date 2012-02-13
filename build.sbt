@@ -24,12 +24,11 @@ seq(lsSettings: _*)
 (description in LsKeys.lsync) :=
   "A project template - use this for your project, don't publish me!"
 
+
 // sbt-release configuration
 // -------------------------
 
-import sbtrelease.Release._
-
-seq(releaseSettings: _*)
+seq(sbtrelease.Release.releaseSettings: _*)
 
 // Maven publishing configuration
 // ------------------------------
