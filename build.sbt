@@ -7,7 +7,7 @@ version := "0.1.0-SNAPSHOT"
 scalacOptions ++= Seq("-deprecation", "-unchecked", "-Xcheckinit", "-Xmigration", "-encoding", "UTF-8")
 
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "1.6.1" % "test"
+  "org.scalatest" %% "scalatest" % "1.8" % "test"
 )
 
 
@@ -28,7 +28,7 @@ seq(lsSettings: _*)
 // sbt-release configuration
 // -------------------------
 
-seq(sbtrelease.Release.releaseSettings: _*)
+releaseSettings
 
 // Maven publishing configuration
 // ------------------------------

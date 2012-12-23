@@ -5,9 +5,12 @@ resolvers ++= Seq(
   "lessis" at "http://repo.lessis.me"
 )
 
-addSbtPlugin("com.github.gseitz" % "sbt-release" % "0.4")
+addSbtPlugin("com.github.gseitz" % "sbt-release" % "0.6")
 
-addSbtPlugin("me.lessis" % "ls-sbt" % "0.1.1")
+addSbtPlugin("me.lessis" % "ls-sbt" % "0.1.2")
+
+// Plugin for generating projects dependency details for Intellij IDEA...
+addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "1.2.0")
 
 // Add this to your global ~/.sbt/plugins/build.sbt file and create user logon details etc. in a file such as
 // ~/.sbt/posterous-sbt.sbt as described here: https://github.com/n8han/posterous-sbt
