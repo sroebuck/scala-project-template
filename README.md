@@ -19,6 +19,12 @@ This template is not complete and I have yet to document what you need to change
 Prerequisites
 -------------
 
+To deploy a project to the Sonatype Maven repository you are best reading [this explanation](http://www.cakesolutions.net/teamblogs/2012/01/28/publishing-sbt-projects-to-nexus/) which explains that you need to set up your credentials in a file such as `~/.sbt/sonatype.sbt`, looking like:
+
+    credentials += Credentials("Sonatype Nexus Repository Manager",
+                               "oss.sonatype.org",
+                               "username",
+                               "password")
 
 Building and installing
 -----------------------
