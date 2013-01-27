@@ -4,10 +4,13 @@ name := "template-project"
 
 version := "0.1.0-SNAPSHOT"
 
+// set the Scala version used for the project
+scalaVersion := "2.10.0"
+
 scalacOptions ++= Seq("-deprecation", "-unchecked", "-Xcheckinit", "-Xmigration", "-encoding", "UTF-8")
 
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "1.8" % "test"
+  "org.scalatest" % "scalatest_2.10.0" % "1.8" % "test"
 )
 
 
@@ -67,3 +70,14 @@ pomExtra := (
       <url>https://github.com/sroebuck</url>
     </developer>
   </developers>)
+
+// ------------------------------------------------------------------------------------------------------------
+// Setting for scct - Code coverage tool
+
+seq(ScctPlugin.instrumentSettings : _*)
+
+
+// ------------------------------------------------------------------------------------------------------------
+// Setting for jacoco4sbt - Code coverage tool
+
+seq(jacoco.settings : _*)
