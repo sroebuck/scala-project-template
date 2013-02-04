@@ -10,7 +10,16 @@ scalaVersion := "2.10.0"
 scalacOptions ++= Seq("-deprecation", "-unchecked", "-Xcheckinit", "-Xmigration", "-encoding", "UTF-8")
 
 libraryDependencies ++= Seq(
-  "org.scalatest" % "scalatest_2.10.0" % "1.8" % "test"
+  "org.scalatest" % "scalatest_2.10.0" % "1.8" % "test",
+  // Logging...
+  "com.typesafe" %% "scalalogging-slf4j" % "1.0.1",
+  "ch.qos.logback" % "logback-classic" % "1.0.6",
+  "org.slf4j" % "slf4j-api" % "1.7.2",
+  // Configuration...
+  "com.typesafe" % "config" % "1.0.0",
+  // Date Library...
+  "joda-time" % "joda-time" % "2.1",
+  "org.joda" % "joda-convert" % "1.2"
 )
 
 
