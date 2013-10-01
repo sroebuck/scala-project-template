@@ -1,4 +1,3 @@
-
 resolvers ++= Seq(
   "coda" at "http://repo.codahale.com",
   "gseitz@github" at "http://gseitz.github.com/maven/",
@@ -17,9 +16,7 @@ addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "1.2.0")
 // addSbtPlugin("net.databinder" % "posterous-sbt" % "0.3.2")
 
 // scct - Code coverage tool
-resolvers += "scct-github-repository" at "http://mtkopone.github.com/scct/maven-repo"
-
-addSbtPlugin("reaktor" % "sbt-scct" % "0.2-SNAPSHOT")
+addSbtPlugin("com.github.scct" % "sbt-scct" % "0.2")
 
 // jacoco4sbt - Code coverage tool
 libraryDependencies ++= Seq(
